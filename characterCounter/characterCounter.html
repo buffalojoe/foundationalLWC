@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Character Counter">
+        <lightning-input
+            label="Enter Some Characters"
+            value={inputText}
+            onchange={handleTextChange}
+        ></lightning-input>
+        <p class="slds-text-color_default">Character Count: {inputTextLength}</p>
+    </lightning-card>
+</template>

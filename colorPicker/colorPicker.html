@@ -1,0 +1,11 @@
+<template>
+    <lightning-button-group>
+        <lightning-button label="Blue" onclick={handleColorChange} value="#1a20d6"></lightning-button>
+        <lightning-button label="Red" onclick={handleColorChange} value="#d61a1a"></lightning-button>
+        <lightning-button label="Green" onclick={handleColorChange} value="#1ee327"></lightning-button>
+    </lightning-button-group>
+    <!-- @html-ignore -->
+    <div class="slds-text-body_regular" style={divStyle}>
+        Selected Color: {hexCode}
+    </div>
+</template>
