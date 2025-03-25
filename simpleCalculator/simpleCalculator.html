@@ -1,0 +1,11 @@
+<template>
+    <lightning-input label="First Number" onchange={handleNum1Change} type="number" step="any"></lightning-input>
+    <lightning-input label="Second Number" onchange={handleNum2Change} type="number" step="any"></lightning-input>
+    <lightning-button variant="neutral" label="+" onclick={handleAdd}></lightning-button>
+    <lightning-button variant="neutral" label="-" onclick={handleSubtract}></lightning-button>
+    <lightning-button variant="neutral" label="*" onclick={handleMultiply}></lightning-button>
+    <lightning-button variant="neutral" label="/" onclick={handleDivide}></lightning-button>
+    <div class="slds-p-around_medium">
+        Answer: {getResult}
+    </div>
+</template>

@@ -1,0 +1,9 @@
+<template>
+    <lightning-button variant="neutral" label="Click Me!" onclick={handleClick}></lightning-button>
+    <lightning-button variant="neutral" label="Clear Me!" onclick={handleClearClick}></lightning-button>
+    <lightning-card title="Your Clicks:">
+        <div class="slds-p-around_medium">
+            You clicked {getClicks} times.
+        </div>
+    </lightning-card>
+</template>
